@@ -135,6 +135,7 @@ Uncomment the decrypt and enc/dec declarations, creation, and `start` calls in `
 ```systemverilog
 AES_decrypt_sequence decrypt_seq;
 AES_enc_dec_sequence both_seq;
+```
 
 1. **Reset sequence** — Asserts reset (`rst_n = 0`)
 2. **Encrypt sequence** — 100 randomized encryption transactions (`flag = 1`)
