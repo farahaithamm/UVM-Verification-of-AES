@@ -140,7 +140,7 @@ AES_enc_dec_sequence both_seq;
 2. **Encrypt sequence** — 100 randomized encryption transactions (`flag = 1`)
 
 Decrypt and combined encrypt/decrypt sequences are available in `AES_sequences.sv` but commented out in `AES_test.sv`. Uncomment them in the test's `run_phase` to enable those modes.
-
+```
 ## Scoreboard Flow
 
 1. Monitor captures a transaction when `valid_out` is asserted.
