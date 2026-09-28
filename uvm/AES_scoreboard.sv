@@ -33,13 +33,13 @@ class AES_scoreboard extends uvm_scoreboard;
             $fclose(file);
 
             if (t.flag) begin
-                if ($system("python  ../ref_model/aes_enc.py") != 0) begin
+                if ($system("python  ref_model/aes_enc.py") != 0) begin
                     `uvm_error(get_full_name(), "PYTHON ENCRYPTION FAILED")
                     return;
                 end
             end
             else begin
-                if ($system("python  ../ref_model/aes_dec.py") != 0) begin
+                if ($system("python  ref_model/aes_dec.py") != 0) begin
                     `uvm_error(get_full_name(), "PYTHON DECRYPTION FAILED")
                     return;
                 end
