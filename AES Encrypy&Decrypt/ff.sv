@@ -6,7 +6,7 @@ module ff#(parameter N = 128)(
 );
 
 always @(posedge clk, negedge rst_n) begin
-    if (rst_n) begin
+    if (!rst_n) begin
         data_out <= 0;
         valid_out <= 0;
     end
