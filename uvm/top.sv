@@ -11,7 +11,7 @@ intf inf(clk);
 AES_128 dut(
     .clk(inf.clk),
     .rst_n(inf.rst_n),
-    .plan_text(inf.plain_text),
+    .plain_text(inf.plain_text),
     .cipher_key(inf.cipher_key),
     .valid_in(inf.valid_in),
     .cipher_text(inf.cipher_text),
